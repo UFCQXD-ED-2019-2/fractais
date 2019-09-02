@@ -12,15 +12,15 @@ Para compilar e executar os códigos desta atividade, é necessário usar a bibl
 
 ### Ubuntu (e derivados do Debian)
 ```bash
-sudo apt-get install libsfml-dev qt5-default qtcreator
+sudo apt-get install libsfml-dev
 ```
 ### Fedora (e derivados do Red Hat)
 ```bash
-sudo dnf install SFML-devel qt5-devel qt-creator
+sudo dnf install SFML-devel
 ```
 ### Manjaro (e derivados do Arch)
 ```bash
-sudo pacman -S sfml qt5-base qtcreator
+sudo pacman -S sfml
 ```
 
 ### Windows
@@ -28,14 +28,17 @@ Vá para o site [https://www.sfml-dev.org/download.php](https://www.sfml-dev.org
 
 O link a seguir possui instruções de configuração das IDEs para uso da biblioteca gráfica: https://www.sfml-dev.org/tutorials/2.5/ (em inglês).
 
-Para baixar o _Qt_ e o _Qt Creator_, vá para o site http://www.qt.io, clique no link _"Download. Try. Buy."_ no topo da página, depois escolha a versão _Open Source_ e, na página que será aberta, escolha a versão do seu Windows para ser baixada (pode ser necessário clicar em _"view other options"_). Instale o executável baixado.
-
 
 ## Uso
 
 ### Compilação ###
 
-A biblioteca está em `lib/cpen.h`. O projeto do *Qt Creator* já inclui as bibliotecas.
+#### Via IDEs
+
+A biblioteca está em `lib/cpen.h`. Foram incluídos alguns arquivos de projeto para algumas IDEs:
+* CLion (ou baseados em _cmake_): CMakeLists.txt
+* QtCreator (ou baseados em _qmake_): Fractais.pro
+* Code::Blocks: Fractais.cbp
 
 #### Via make
 
